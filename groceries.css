@@ -104,8 +104,6 @@ h2 {
 }
 h3 {
   font-size: 1.25rem;
-  text-align: center;
-  color: var(--main-title-colour);
 }
 h4 {
   font-size: 0.875rem;
@@ -213,7 +211,8 @@ Grocery List
   background: #d4edda;
 }
 .grocery-form h3 {
-  margin-bottom: 1.5rem;
+  color: var(--main-title-colour);
+  margin-bottom: 0;
   text-align: center;
 }
 .form-control {
@@ -337,23 +336,23 @@ article {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.menu-buttons {
-  margin-top: 3rem;
+.home-button {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 0;
+  transition: var(--transition);
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.home-button:hover {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.title-container {
+  margin-bottom: 1.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-}
-
-.menu-buttons > a {
-  padding: 1rem;
-  margin-top: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  width: 100%;
-  text-align: center;
-  border-radius: var(--radius);
-}
-
-.menu-buttons > a:visited {
-  color: inherit;
 }
